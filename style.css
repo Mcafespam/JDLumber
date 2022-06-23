@@ -18,13 +18,6 @@ a {
     background-position: center;
 }
 
-.aboutus{
-    width: 100%;
-    height: 100vh;
-    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url(bg.png);
-    background-size: cover;
-    background-position: center;
-}
 
 .logo{
     width: 12%;
@@ -48,10 +41,10 @@ a {
 
 .button{ 
     
-    font-size: 20px;
+    font-size: 30px;
     border-radius: 20px;
-    background-color: white;
-    width: 125px;
+    background-color: rgb(0, 0, 0);
+    width: 165px;
     height: 50px;
     cursor: pointer;
     margin: 0 auto;
@@ -59,25 +52,22 @@ a {
     
 }
 
-.button a {color:black; 
+.button a {color:rgb(255, 255, 255); 
     font-family: 'Montserrat', sans-serif; 
     font-weight: bold;}
 
-.button:hover a, .button:hover {
+.button:hover {
+    transition-timing-function: ease-out;
     transition-duration: 0.15s;
-    background-color: black;
-    color: white;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
 }
 
-.headera{
-    color: white;
-    text-align: center;
-    font-size: 50px;
-    font-family: 'Montserrat', sans-serif;
-    margin-bottom: 50px;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -o-user-select: none;
-    user-select: none;
+
+.button:hover a{
+    transition-delay: 0.15s;
+    transition-timing-function: ease-out;
+    transition-duration: 0.15s;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
 }
